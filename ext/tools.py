@@ -13,5 +13,6 @@ def _set_status(self, s=1):
     """Set status on printer
 
     :param s: (in seconds) frequency of status or 0 to disable defualts to 1.
+    :return
     """
     return(self.replace("M105 s{s}", s))
